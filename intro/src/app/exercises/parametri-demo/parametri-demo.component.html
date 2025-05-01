@@ -1,0 +1,9 @@
+<h2>Parametri ricevuti</h2>
+
+<p><strong>Route Param (es: /parametri-demo/690):</strong> {{ routeParamId }}</p>
+<p><strong>Query Param (es: /parametri-demo?id=000):</strong> {{ queryParamId }}</p>
+
+<hr>
+
+<button (click)="vaiConRouteParams()">Vai con Route Params (/parametri-demo/999)</button>
+<button (click)="vaiConQueryParams()">Vai con Query Params (/parametri-demo?id=888)</button>

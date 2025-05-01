@@ -1,0 +1,45 @@
+<h2>1. Form di login</h2>
+<input type="email" [(ngModel)]="email" placeholder="Email">
+<input type="password" [(ngModel)]="password" placeholder="Password">
+<p>Email: {{ email }}</p>
+<p>Password: {{ password }}</p>
+
+<hr>
+
+<h2>2. Anteprima in tempo reale</h2>
+<input [(ngModel)]="username" placeholder="Scrivi il tuo nome">
+<p>Ciao, {{ username }}!</p>
+
+<hr>
+
+<h2>3. Checkbox: accetta termini</h2>
+<label>
+  <input type="checkbox" [(ngModel)]="acceptedTerms">
+  Accetto i termini
+</label>
+<button [disabled]="!acceptedTerms">Continua</button>
+
+<hr>
+
+<h2>4. Radio Button</h2>
+<label><input type="radio" [(ngModel)]="selectedGender" value="Maschio"> Maschio</label>
+<label><input type="radio" [(ngModel)]="selectedGender" value="Femmina"> Femmina</label>
+<p>Genere selezionato: {{ selectedGender }}</p>
+
+<hr>
+
+<h2>5. Select (dropdown)</h2>
+<select [(ngModel)]="selectedLanguage">
+  <option value="">-- Scegli lingua --</option>
+  <option value="it">Italiano</option>
+  <option value="en">Inglese</option>
+  <option value="fr">Francese</option>
+</select>
+<p>Lingua selezionata: {{ selectedLanguage }}</p>
+
+<hr>
+
+<h2>6. TextArea per commenti</h2>
+<textarea [(ngModel)]="comment" rows="4" cols="30" placeholder="Scrivi il tuo commento..."></textarea>
+<p>Commento inserito:</p>
+<blockquote>{{ comment }}</blockquote>

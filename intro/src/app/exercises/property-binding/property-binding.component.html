@@ -1,0 +1,30 @@
+<h2>Profilo Utente</h2>
+
+<!-- 1. Immagine dinamica -->
+<img [src]="profileImageUrl" alt="Foto Profilo" width="150" height="150" />
+
+<!-- 2. Bottone abilitato solo se form valido -->
+<button [disabled]="!isFormValid" (click)="submitForm()">Invia</button>
+<button (click)="validateForm()">Valida Form</button>
+
+<!-- 3. Input pre-compilato -->
+<input type="text" [value]="userName" />
+
+<!-- 4. Messaggio di errore (hidden) -->
+<div [hidden]="!hasError" style="color: red;">Errore: controlla i dati!</div>
+<button (click)="toggleError()">Toggle errore</button>
+
+<!-- 5. Card con stile dinamico -->
+<div
+  [style.width.px]="cardWidth"
+  [style.background]="favoriteColor"
+  style="padding: 1rem; margin-top: 1rem; border-radius: 10px;"
+>
+  Card con larghezza dinamica ({{ cardWidth }}px) e colore {{ favoriteColor }}
+</div>
+
+<!-- 6. Checkbox dinamica -->
+<label>
+  <input type="checkbox" [checked]="subscribeToNewsletter" />
+  Iscritto alla newsletter
+</label>

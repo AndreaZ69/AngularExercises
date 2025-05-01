@@ -1,0 +1,13 @@
+<h1>Benvenuto, {{ username }}!</h1>
+
+<p>Hai scelto {{ quantity }} prodotti.</p>
+<p>Prezzo unitario: €{{ price }}</p>
+<p>Totale: €{{ getTotal() }}</p>
+
+<p>Nome formattato: {{ getFormattedName() }}</p>
+
+<button (click)="acquista()">
+    {{ isAvailable ? 'Acquista ora' : 'Non disponibile' }}
+  </button>
+
+<p>Data e ora attuali: {{ currentDate }}</p>

@@ -1,0 +1,31 @@
+<h2>Lezione 3: Direttive e Comunicazione tra Componenti</h2>
+
+<!-- *ngIf -->
+<div *ngIf="isLoggedIn">
+  <p>Benvenuto utente!</p>
+</div>
+
+<!-- *ngFor -->
+<h3>Lista Utenti:</h3>
+<ul>
+  <li *ngFor="let utente of utenti">{{ utente }}</li>
+</ul>
+
+<!-- *ngSwitch -->
+<h3>Ruolo Utente: {{ ruolo }}</h3>
+<button (click)="cambiaRuolo()">Cambia Ruolo</button>
+
+<div [ngSwitch]="ruolo">
+  <p *ngSwitchCase="'admin'">Accesso completo</p>
+  <p *ngSwitchCase="'editor'">Accesso in scrittura</p>
+  <p *ngSwitchCase="'guest'">Accesso in sola lettura</p>
+  <p *ngSwitchDefault>Ruolo sconosciuto</p>
+</div>
+
+<!-- [ngClass] -->
+<p [ngClass]="{ evidenziato: evidenzia }">
+  Questo testo ha una classe condizionata.
+</p>
+<button (click)="evidenzia = !evidenzia">
+  Toggle Evidenzia
+</button>

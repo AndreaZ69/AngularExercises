@@ -1,0 +1,45 @@
+<h2>Event Binding Esempi</h2>
+
+<!-- Click -->
+<p>Hai cliccato {{ count }} volte.</p>
+<button (click)="incrementa()">Cliccami</button>
+
+<!-- Input -->
+<div>
+  <input type="text" placeholder="Scrivi qualcosa" (input)="onInput($event)">
+  <p>Hai scritto: {{ inputText }}</p>
+</div>
+
+<!-- Select -->
+<div>
+  <select (change)="onSelectChange($event)">
+    <option value="">-- Scegli un'opzione --</option>
+    <option value="opzione1">Opzione 1</option>
+    <option value="opzione2">Opzione 2</option>
+  </select>
+  <p>Hai selezionato: {{ selectValue }}</p>
+</div>
+
+<!-- Mouseover / Mouseleave -->
+<div 
+  (mouseenter)="onMouseEnter()" 
+  (mouseleave)="onMouseLeave()" 
+  style="width: 200px; height: 100px; background-color: lightblue; margin-top: 10px;">
+  Passa il mouse qui
+</div>
+<p *ngIf="isMouseOver">Sei sopra il box!</p>
+
+<!-- Keydown -->
+<input type="text" (keydown)="onKeydown($event)" placeholder="Premi tasti qui">
+
+<!-- Submit -->
+<form (submit)="onSubmit($event)">
+  <input type="text" [(ngModel)]="inputText" name="inputField">
+  <button type="submit">Invia</button>
+</form>
+
+<!-- Log eventi -->
+<h4>Log Eventi:</h4>
+<ul>
+  <li *ngFor="let item of log">{{ item }}</li>
+</ul>
