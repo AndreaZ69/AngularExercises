@@ -1,0 +1,28 @@
+<section class="container">
+  <h2 class="title">RxJS HTTP Operators</h2>
+
+  <label for="userIdInput" class="label">
+    User ID (1-10):
+    <input
+      id="userIdInput"
+      type="number"
+      [(ngModel)]="userId"
+      min="1"
+      max="10"
+      class="input"
+    />
+  </label>
+
+  <div class="buttons">
+    <button class="btn btn-merge" (click)="fetchWithMergeMap()">mergeMap</button>
+    <button class="btn btn-concat" (click)="fetchWithConcatMap()">concatMap</button>
+    <button class="btn btn-switch" (click)="fetchWithSwitchMap()">switchMap</button>
+    <button class="btn btn-exhaust" (click)="fetchWithExhaustMap()">exhaustMap</button>
+  </div>
+
+  <h3 *ngIf="loading" class="loading">Caricamento...</h3>
+
+  <pre *ngIf="user" class="user-output">{{ user | json }}</pre>
+
+  <p *ngIf="error" class="error">Errore: {{ error }}</p>
+</section>

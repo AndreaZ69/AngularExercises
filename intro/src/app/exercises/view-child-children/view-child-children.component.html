@@ -1,0 +1,22 @@
+<h2>ViewChild e ViewChildren</h2>
+
+
+<h3>Input (ViewChild)</h3>
+<input #myInput type="text" placeholder="Focus automatico qui" />
+<button (click)="focusInput()">Metti a fuoco input</button>
+
+<hr />
+
+<h3>Lista bottoni (ViewChildren)</h3>
+<button
+  *ngFor="let btn of buttons; let i = index"
+  #btnRef
+  (click)="onButtonClick(i)"
+  [style.backgroundColor]="btnColors[i]"
+>
+  {{ btn }}
+</button>
+
+<br /><br />
+
+<button (click)="colorAllRed()">Colore rosso a tutti</button>

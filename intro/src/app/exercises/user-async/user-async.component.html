@@ -1,0 +1,13 @@
+<h2>Utenti (Async Pipe)</h2>
+
+<div *ngIf="users$ | async as users; else loading">
+  <ul>
+    <li *ngFor="let user of users">
+      <strong>{{ user.name }}</strong> — {{ user.email }}
+    </li>
+  </ul>
+</div>
+
+<ng-template #loading>
+  <p class="loading">Caricamento utenti...</p>
+</ng-template>

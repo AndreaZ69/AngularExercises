@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PadreFiglioComponent } from './padre-figlio.component';
+import { MemoryLeakComponent } from './memory-leak.component';
 
-describe('PadreFiglioComponent', () => {
-  let component: PadreFiglioComponent;
-  let fixture: ComponentFixture<PadreFiglioComponent>;
+describe('MemoryLeakComponent', () => {
+  let component: MemoryLeakComponent;
+  let fixture: ComponentFixture<MemoryLeakComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PadreFiglioComponent]
+      imports: [MemoryLeakComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PadreFiglioComponent);
+    fixture = TestBed.createComponent(MemoryLeakComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

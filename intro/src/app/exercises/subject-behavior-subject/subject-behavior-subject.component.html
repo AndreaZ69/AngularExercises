@@ -1,0 +1,17 @@
+<h2>Dimostrazione Subject vs BehaviorSubject</h2>
+
+<button (click)="emitColor()">Emetti colore (cambia colore)</button>
+<button (click)="subscribeLate()">Iscriviti DOPO 3 secondi</button>
+
+<div style="margin-top: 20px;">
+    <div>
+        <strong>BehaviorSubject ultimo valore:</strong> {{ behaviorColor || 'nessun valore' }}
+    </div>
+    <div>
+        <strong>Subject ultimo valore:</strong> {{ subjectColor || 'nessun valore' }}
+    </div>
+</div>
+
+<div style="margin-top: 20px;">
+    <p>Colori emessi finora: {{ emittedColors.join(', ') }}</p>
+</div>

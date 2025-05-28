@@ -1,0 +1,124 @@
+$primary-color: #4a90e2;
+$secondary-color: #50e3c2;
+$error-color: #e94e77;
+$background: #f7f9fc;
+$text-color: #333;
+$btn-padding: 0.6rem 1.2rem;
+$border-radius: 8px;
+$transition: 0.3s ease;
+
+
+.container {
+  max-width: 480px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: $border-radius;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: $text-color;
+}
+
+
+.title {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: $primary-color;
+  font-size: 1.8rem;
+}
+
+
+.label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 1rem;
+
+  .input {
+    margin-left: 0.6rem;
+    width: 4.5rem;
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+    border: 2px solid lighten($primary-color, 30%);
+    border-radius: $border-radius / 2;
+    transition: border-color $transition;
+
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+      box-shadow: 0 0 5px rgba($primary-color, 0.5);
+    }
+  }
+}
+
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+
+  .btn {
+    padding: $btn-padding;
+    border-radius: $border-radius;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    transition: background-color $transition;
+
+    &.btn-merge {
+      background-color: $primary-color;
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+    &.btn-concat {
+      background-color: $secondary-color;
+      &:hover {
+        background-color: darken($secondary-color, 10%);
+      }
+    }
+    &.btn-switch {
+      background-color: #f5a623;
+      &:hover {
+        background-color: darken(#f5a623, 10%);
+      }
+    }
+    &.btn-exhaust {
+      background-color: #9013fe;
+      &:hover {
+        background-color: darken(#9013fe, 10%);
+      }
+    }
+  }
+}
+
+
+.loading {
+  text-align: center;
+  font-weight: 600;
+  font-style: italic;
+  color: $primary-color;
+}
+
+
+.user-output {
+  background: $background;
+  border: 1px solid lighten($primary-color, 60%);
+  border-radius: $border-radius / 1.5;
+  padding: 1rem;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+
+.error {
+  color: $error-color;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 1rem;
+}

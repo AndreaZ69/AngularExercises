@@ -1,0 +1,9 @@
+<h1>COMPONENTE FIGLIO: ---</h1>
+
+<p><strong>Nome attuale:</strong> {{ nome }}</p>
+<div *ngIf="log.length">
+<h4>Log cambiamenti:</h4>
+<ul>
+    <li *ngFor="let item of log">{{ item }}</li>
+</ul>
+</div>

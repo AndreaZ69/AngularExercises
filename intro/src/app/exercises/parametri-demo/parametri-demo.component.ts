@@ -6,7 +6,8 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   selector: 'app-parametri-demo',
   imports: [CommonModule],
-  templateUrl: './parametri-demo.component.html'
+  templateUrl: './parametri-demo.component.html',
+  styleUrl: './parametri-demo.component.scss',
 })
 export class ParametriDemoComponent implements OnInit {
   routeParamId: string | null = null;

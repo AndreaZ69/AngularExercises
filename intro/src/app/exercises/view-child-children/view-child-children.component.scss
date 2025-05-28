@@ -1,0 +1,75 @@
+:host {
+  display: block;
+  max-width: 600px;
+  margin: 2rem auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #0052cc;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #0052cc;
+  padding-bottom: 0.3rem;
+}
+
+h3 {
+  margin-top: 1.5rem;
+  font-weight: 600;
+  color: #222;
+}
+
+input[type="text"] {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  outline-color: #0052cc;
+  transition: border-color 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  margin-right: 1rem;
+}
+
+input[type="text"]:focus {
+  border-color: #0052cc;
+  box-shadow: 0 0 6px #0052ccaa;
+}
+
+button {
+  cursor: pointer;
+  background-color: #0052cc;
+  color: white;
+  border: none;
+  padding: 0.55rem 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+button:hover {
+  background-color: #003d99;
+}
+
+button:active {
+  background-color: #002966;
+}
+
+hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+button[style] {
+  min-width: 120px;
+  margin-bottom: 0.5rem;
+}

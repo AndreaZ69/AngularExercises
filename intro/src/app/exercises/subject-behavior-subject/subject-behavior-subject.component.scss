@@ -1,0 +1,76 @@
+span {
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+
+  &.lightblue {
+    color: lightblue;
+  }
+  &.lightgreen {
+    color: lightgreen;
+  }
+  &.lightpink {
+    color: lightpink;
+  }
+  &.lightcoral {
+    color: lightcoral;
+  }
+  &.lightgray {
+    color: lightgray;
+  }
+}
+
+:host {
+  display: block;
+  padding: 2rem;
+  background-color: #f9fafb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #1565c0;
+  border-bottom: 2px solid #90caf9;
+  padding-bottom: 0.5rem;
+}
+
+button {
+  margin-right: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #42a5f5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #1e88e5;
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+}
+
+div {
+  margin-top: 1.2rem;
+
+  strong {
+    display: inline-block;
+    width: 220px;
+    color: #333;
+  }
+
+  p {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #388e3c;
+  }
+}

@@ -1,0 +1,83 @@
+:host {
+  display: block;
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+  }
+
+  input, select, button, textarea {
+    display: block;
+    width: 100%;
+    padding: 0.6rem;
+    margin: 0.5rem 0 1rem;
+    font-size: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    transition: border 0.3s ease;
+
+    &:focus {
+      border-color: #3b82f6;
+      outline: none;
+    }
+  }
+
+  button {
+    background-color: #2563eb;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #1e40af;
+    }
+
+    &:disabled {
+      background-color: #9ca3af;
+      cursor: not-allowed;
+    }
+  }
+
+  form {
+    margin-top: 1rem;
+  }
+
+  div[style*="background-color: lightblue"] {
+    border: 2px dashed #60a5fa;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    color: #1d4ed8;
+    transition: background-color 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #bfdbfe;
+    }
+  }
+
+  ul {
+    margin-top: 1rem;
+    padding-left: 1rem;
+
+    li {
+      list-style: disc;
+      margin-bottom: 0.3rem;
+      font-size: 0.95rem;
+      color: #374151;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+:host {
+  display: block;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  color: #333;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #1565c0;
+  border-bottom: 2px solid #bbdefb;
+  padding-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0.8rem 0;
+
+  strong {
+    color: #1e88e5;
+  }
+}
+
+button {
+  margin-right: 0.75rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #42a5f5;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #1e88e5;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+p[ng-reflect-ng-if] {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #2e7d32;
+}

@@ -1,0 +1,72 @@
+:host {
+  display: block;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+  background-color: #f5f8fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  color: #333;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #1e88e5;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  color: #1565c0;
+}
+
+label {
+  display: block;
+  margin: 1rem 0;
+  font-weight: 500;
+
+  input {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+
+    &:focus {
+      outline: none;
+      border-color: #42a5f5;
+      box-shadow: 0 0 4px rgba(66, 165, 245, 0.4);
+    }
+  }
+}
+
+p {
+  margin: 0.8rem 0;
+  font-size: 1rem;
+}
+
+strong {
+  color: #2e7d32;
+}
+
+h4 {
+  margin-top: 1.2rem;
+  font-size: 1.2rem;
+  color: #555;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.3rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+
+  li {
+    margin: 0.4rem 0;
+    font-size: 0.95rem;
+  }
+}

@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
   selector: 'app-page-form',
   templateUrl: './page-form-component.component.html',
   imports: [CommonModule, RouterModule],
+  styleUrl: './page-form-component.component.scss'
 })
 export class PageFormComponent {
 }

@@ -1,13 +1,17 @@
-<h3>{{ titolo }}</h3>
-<!-- 
-<p>Ciao {{ utente.nome }}, hai {{ utente.eta }} anni.</p>
-<button (click)="cliccato.emit()">Cliccami</button>
-<input [(ngModel)]="valore" placeholder="Scrivi qui">
-<button (click)="inviaTesto.emit(valore)">Invia</button>
+<h2>{{ titolo }} - Figlio</h2>
+<p>Utente: {{ utente.nome }} ({{ utente.eta }} anni)</p>
+
+<button (click)="onClick()">Clicca qui (emetti evento)</button>
+
+<div>
+  <input [(ngModel)]="valore" placeholder="Inserisci testo" />
+  <button (click)="invia()">Invia testo al padre</button>
+</div>
+
+<h3>Prodotti</h3>
 <ul>
-  <li *ngFor="let prodotto of prodotti">
-    {{ prodotto.nome }}
-    <button (click)="aggiunto.emit(prodotto)">Aggiungi al carrello</button>
+  <li *ngFor="let p of prodotti">
+    {{ p.nome }}
+    <button (click)="aggiungiAlCarrello(p)">Aggiungi al carrello</button>
   </li>
 </ul>
---> 

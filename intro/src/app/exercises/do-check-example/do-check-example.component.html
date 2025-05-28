@@ -1,0 +1,9 @@
+<h2>ngDoCheck – Rilevamento Mutazioni Oggetto</h2>
+
+<p><strong>Nome:</strong> {{ persona.nome }}</p>
+<p><strong>Cognome:</strong> {{ persona.cognome }}</p>
+
+<button (click)="cambiaNome()">Cambia Nome</button>
+<button (click)="cambiaCognome()">Cambia Cognome</button>
+
+<p *ngIf="messaggio">{{ messaggio }}</p>

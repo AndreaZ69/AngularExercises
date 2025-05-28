@@ -7,6 +7,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-page-result',
   templateUrl: './page-result-component.component.html',
   imports: [CommonModule],
+  styleUrl: './page-result-component.component.scss'
 })
 export class PageResultComponent {
   nome = '';
